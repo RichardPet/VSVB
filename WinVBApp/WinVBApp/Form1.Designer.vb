@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.lblTime = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -34,17 +35,29 @@ Partial Class Form1
         Me.Button1.Text = "Click me"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'lblTime
+        '
+        Me.lblTime.AutoSize = True
+        Me.lblTime.Location = New System.Drawing.Point(12, 18)
+        Me.lblTime.Name = "lblTime"
+        Me.lblTime.Size = New System.Drawing.Size(51, 17)
+        Me.lblTime.TabIndex = 1
+        Me.lblTime.Text = "Label1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(496, 194)
+        Me.Controls.Add(Me.lblTime)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
         Me.Text = "StartForm"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Button1 As Button
+    Friend WithEvents lblTime As Label
 End Class
